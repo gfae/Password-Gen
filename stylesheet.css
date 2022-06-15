@@ -6,24 +6,6 @@ html, body {
     color: rgb(53, 53, 53)
 }
 
-#container {
-    width: 500px;
-    height: 500px;
-    margin: 100px auto;
-    padding: 50px;
-    background:#FFE4E6;
-    border-radius: 10px;
-}
-
-#password-gen {
-    margin: 20px 0;
-    padding: 20px 0;
-    border-top: 1px solid #374151;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-}
-
 h1 {
     font-size: 2.5em;
     margin-bottom: 0;
@@ -34,6 +16,10 @@ h2 {
     padding-bottom: 30px;
     font-size: 1.5em;
     font-weight: normal;
+}
+
+p {
+    font-size: 1.2em;
 }
 
 button {
@@ -56,17 +42,43 @@ span {
     color: #ff707a;
 }
 
-.password { 
+input[type="number"], input[type="text"] {
     border: none;
     border-radius: 10px;
     background: #374151;
     color: #ff707a;
-    margin: 10px 0;
-    padding: 10px;
     font-size: 16px;
     font-weight: bold;
     text-align: center;
 }
+
+input[type="number"] {
+    padding: 5px 0 5px 0;
+}
+
+input[type="text"] { 
+    margin: 10px 0;
+    padding: 10px;
+}
+
+#container {
+    width: 500px;
+    height: 500px;
+    margin: 100px auto;
+    padding: 50px;
+    background:#FFE4E6;
+    border-radius: 10px;
+}
+
+#password-gen {
+    margin: 20px 0;
+    padding: 20px 0;
+    border-top: 1px solid #374151;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
 
 #copied {
     margin: 0;

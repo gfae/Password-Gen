@@ -7,9 +7,10 @@ document.getElementById('password-two').value = passwords[1];
 document.getElementById('password-three').value = passwords[2];
 document.getElementById('password-four').value = passwords[3];
 
-generatePassword = () => { 
+generatePassword = () => {
+    let passwordLength = document.getElementById('length').value 
     let password = '';
-    for (let i = 0; i < 15; i++) {
+    for (let i = 0; i < passwordLength; i++) {
         password += charArray[Math.floor(Math.random() * charArray.length)];
     }
     return password;
