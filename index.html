@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="stylesheet.css">
+    </head>
+    <body>
+        <div id="container">
+            <h1>Generate a <br><span>random password</span></h1>
+            <h2>Never use an insecure password again.</h2>
+            <p>Enter password length 8-20: 
+                <input class="pass-len" type="number" id="length" min=8 max=20 value=8 onKeyDown="return false">
+            </p>
+            <button onclick="populatePassword()"><img src="icons/light.png"> Generate Passwords</button>
+            <div id="password-gen">
+                <input class="password" type="text" id="password-one" value="" readonly>
+                <input class="password" type="text" id="password-two" value="" readonly>
+                <input class="password" type="text" id="password-three" value="" readonly>
+                <input class="password" type="text" id="password-four" value="" readonly>
+            </div>
+            <p id="copied"></p>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
